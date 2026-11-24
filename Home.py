@@ -20,7 +20,7 @@ st.markdown(f"""
     <p style='color:{t['SUBTEXT']};font-size:1rem;max-width:600px;line-height:1.7;'>A comprehensive analysis of air pollution across <b style='color:{t['TEXT']}'>483 monitoring stations</b>, <b style='color:{t['TEXT']}'>240 cities</b> and <b style='color:{t['TEXT']}'>20 Indian states</b> from 2009 to 2024. Data sourced from CPCB of India.</p>
 </div>""", unsafe_allow_html=True)
 
-k1,k2,k3,k4,k5 = st.columns(5)
+k1,k2,k3,k4 = st.columns(4)
 for col,val,lbl in [(k1,"483","Monitoring Stations"),(k2,"240","Cities Covered"),(k3,"20","Indian States"),(k5,"15 Yrs","Data Coverage")]:
     with col:
         st.markdown(f"<div style='background:{t['CARD']};border:1px solid {t['BORDER']};border-radius:14px;padding:18px 10px;text-align:center;'><div style='font-family:Orbitron;font-size:1.5rem;font-weight:700;color:{t['ACCENT']};white-space:nowrap;'>{val}</div><div style='font-size:0.78rem;color:{t['SUBTEXT']};margin-top:6px;'>{lbl}</div></div>", unsafe_allow_html=True)
