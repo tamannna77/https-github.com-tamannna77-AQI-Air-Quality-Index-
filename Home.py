@@ -21,7 +21,7 @@ st.markdown(f"""
 </div>""", unsafe_allow_html=True)
 
 k1,k2,k3,k4 = st.columns(4)
-for col,val,lbl in [(k1,"483","Monitoring Stations"),(k2,"240","Cities Covered"),(k3,"20","Indian States"),(k5,"15 Yrs","Data Coverage")]:
+for col,val,lbl in [(k1,"483","Monitoring Stations"),(k2,"240","Cities Covered"),(k3,"20","Indian States"),(k4,"15 Yrs","Data Coverage")]:
     with col:
         st.markdown(f"<div style='background:{t['CARD']};border:1px solid {t['BORDER']};border-radius:14px;padding:18px 10px;text-align:center;'><div style='font-family:Orbitron;font-size:1.5rem;font-weight:700;color:{t['ACCENT']};white-space:nowrap;'>{val}</div><div style='font-size:0.78rem;color:{t['SUBTEXT']};margin-top:6px;'>{lbl}</div></div>", unsafe_allow_html=True)
 
