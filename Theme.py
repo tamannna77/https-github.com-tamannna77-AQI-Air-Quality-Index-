@@ -43,6 +43,29 @@ def get_chart_layout(t):
 
 def render_sidebar(t):
     with st.sidebar:
+        st.markdown(
+    f"""
+    <div style="
+        text-align:center;
+        padding:15px 5px;
+        margin-bottom:15px;
+        border-bottom:2px solid {t['ACCENT']};
+    ">
+        <h2 style="
+            color:{t['ACCENT']};
+            font-family:Poppins;
+            font-weight:700;
+            margin:0;
+        ">🌿 AQI</h2>
+        <p style="
+            color:{t['SUBTEXT']};
+            font-size:12px;
+            margin:5px 0 0 0;
+        ">INDIA AIR QUALITY DASHBOARD</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
         
         if st.button(
